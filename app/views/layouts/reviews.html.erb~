@@ -16,11 +16,10 @@
     <%= yield %>
   </div>
   <div id ="footer">
-  <div id = "background-color" style="background-color:yellow">
 <h3>Brought to you by <b>Austen Productions</b></h3>
     Copyright BavcOss 
   </div>
-  </div>
+
 </div>
 </body>
 </html>

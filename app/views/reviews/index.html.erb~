@@ -29,7 +29,9 @@
 <!--  <%= image_tag("name.gif") %>  -->
   </div>
   <div id = "review-location">
-     <b>Location:</b><%= link_to review.location_name, review.location%>
+     <b>Location:</b><%= link_to review.location_name, review.location unless review.location.nil?%><br/>
+     <b>Google Maps</b><br/>
+      <%=google_map(review.location.try('address'), :size => "25x250" ) %>
   </div>
   <div id="review-actions">
     <h4>Actions</h4>   

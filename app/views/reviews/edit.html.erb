@@ -20,6 +20,7 @@
   <p>
     <%= f.label :location%><br />
     <%= f.select "location_id" , Location.all.collect{|p|[p.name, p.id] } %>
+    <%= fields_for_new_location %>
 <!--    
     <%f.fields_for :location do |location|%>      
       <%= location.text_field :name %>    

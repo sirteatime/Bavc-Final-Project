@@ -11,6 +11,13 @@
 #content {
 
 }
+#new-location-link {
+  text-decoration:underline;
+  text-decoration:blink;
+}
+#review-title {
+  text-decoration:none;
+}
 
 #footer {
   text-align:center;

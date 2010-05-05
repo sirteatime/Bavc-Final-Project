@@ -16,9 +16,10 @@
     <%= f.label :rating %><br />
     <%= f.select :rating,[1,2,3,4,5],:selected => @review.rating %>
   </p>
-    <p>
+  <p>
+    <%= f.label :location%><br />
     <%= f.select "location_id" , Location.all.collect{|p|[p.name, p.id] } %>
-<!--    <%= f.label :location%><br />
+<!-- 
     <%f.fields_for :location do |location|%>      
       <%= location.text_field :name %>    
     <%end%>

@@ -7,7 +7,10 @@
   <b>Address:</b>
   <%=h @location.address %>
 </p>
-
+<p>
+  <b>Google Maps</b><br/>
+  <%=google_map(@location.address,:size => "500x500" ) %>
+</p>
 
 <%= link_to 'Edit', edit_location_path(@location) %> |
 <%= link_to 'Back', locations_path %>
