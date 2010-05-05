@@ -1,0 +1,33 @@
+<h1>Details</h1>
+<p>
+  <b>Author:</b>
+  <br><%=h @review.author %></br>
+  <% if @review.happy == true %>
+  is happy!
+  <% else %>
+  is not happy
+  <% end %>
+</p>
+<!--<div id="box" width=200 height=200 border=5 bordercolor > </div> -->
+<p>
+  <strong>Location: </strong>
+   <%= link_to @review.location_name, @review.location %> 
+</p>
+<p>
+  <b>Body:</b>
+  <br><%=h @review.body %></br>
+</p>
+
+<p>
+  <b>Title:</b>
+  <br><%=h @review.title %></br>
+</p>
+
+<p>
+  <b>Rating:</b>
+    <% @review.rating.times do %>
+      &#9733
+    <%end%>
+</p>
+<%= link_to 'Edit', edit_review_path(@review) %> |
+<%= link_to 'Back', reviews_path %>

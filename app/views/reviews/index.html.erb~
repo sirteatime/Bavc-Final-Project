@@ -1,0 +1,43 @@
+
+<div id = "background-color" style="background-color:yellow">
+<center><h1>Austen's reviews</h1></center>
+
+<hr />
+
+<% @reviews.each do |review| %>
+  <div>
+    <h2 id ="review-title"> <%= link_to review.title, review %></h2>
+  </div>
+  <div id="review-body">
+    <%= review.body%>
+  </div>
+  <div id="review-author">
+    written by: <%= review.author %>
+  </div>
+  <div>
+    <% review.rating.times do %>
+      &#9733
+      <!-- <%= image_tag("star.jpg") %> -->
+    <%end%>
+  </div>
+  <div id="review-happy">
+    <% if review.happy == true%>
+    I am happy
+    <%else%> 
+    Not a good place
+    <% end%>
+<!--  <%= image_tag("name.gif") %>  -->
+  </div>
+  <div id = "review-location">
+     <b>Location:</b><%= link_to review.location_name, review.location%>
+  </div>
+  <div id="review-actions">
+    <h4>Actions</h4>   
+    <%= link_to 'Edit', edit_review_path(review) %>
+    <%= link_to 'Destroy', review, :confirm => 'Are you sure?', :method => :delete %>
+  </div>
+<hr />
+<% end %>
+<%= link_to 'New review', new_review_path %>
+  </div>
+

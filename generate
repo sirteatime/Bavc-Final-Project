@@ -1,0 +1,283 @@
+Script started on Tue 27 Apr 2010 05:30:42 PM PDT
+]0;oss@bavc-desktop2: ~/boboss@bavc-desktop2:~/bob$ gener[K[K[K[K[Kgedit reviews.html.erb [Kscript /generate
+/generate: Permission denied
+Terminated
+]0;oss@bavc-desktop2: ~/boboss@bavc-desktop2:~/bob$ script /generate[C[1P/generate
+Usage: script/generate generator [options] [args]
+Rails Info:
+    -v, --version                    Show the Rails version number and quit.
+    -h, --help                       Show this help message and quit.
+General Options:
+    -p, --pretend                    Run but do not make any changes.
+    -f, --force                      Overwrite files that already exist.
+    -s, --skip                       Skip files that already exist.
+    -q, --quiet                      Suppress normal output.
+    -t, --backtrace                  Debugging: show backtrace on errors.
+    -c, --svn                        Modify files with subversion. (Note: svn must be in path)
+    -g, --git                        Modify files with git. (Note: git must be in path)
+
+
+Installed Generators
+  Builtin: controller, helper, integration_test, mailer, metal, migration, model, observer, performance_test, plugin, resource, scaffold, session_migration
+
+More are available at http://wiki.rubyonrails.org/rails/pages/AvailableGenerators
+  1. Download, for example, login_generator.zip
+  2. Unzip to directory /home/oss/.rails/generators/login
+     to use the generator with all your Rails apps
+     or to /home/oss/bob/lib/generators/login
+     to use with this app only.
+  3. Run generate with no arguments for usage information
+       script/generate login
+
+Generator gems are also available:
+  1. gem search -r generator
+  2. gem install login_generator
+  3. script/generate login
+
+]0;oss@bavc-desktop2: ~/boboss@bavc-desktop2:~/bob$ script/generate scall[K[Kffold Name:string[C address:[1Pddress:Address:[C[1@ [1@l[1@o[1@c[1@a[1P[1P[1P[1P[1@l[1@o[1@c[1@a[1@t[1@i[1@o[1@n[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ct es[Kxt
+      exists  app/models/
+      exists  app/controllers/
+      exists  app/helpers/
+      create  app/views/locations
+      exists  app/views/layouts/
+      exists  test/functional/
+      exists  test/unit/
+      exists  test/unit/helpers/
+      exists  public/stylesheets/
+      create  app/views/locations/index.html.erb
+      create  app/views/locations/show.html.erb
+      create  app/views/locations/new.html.erb
+      create  app/views/locations/edit.html.erb
+      create  app/views/layouts/locations.html.erb
+   identical  public/stylesheets/scaffold.css
+      create  app/controllers/locations_controller.rb
+      create  test/functional/locations_controller_test.rb
+      create  app/helpers/locations_helper.rb
+      create  test/unit/helpers/locations_helper_test.rb
+       route  map.resources :locations
+  dependency  model
+      exists    app/models/
+      exists    test/unit/
+      exists    test/fixtures/
+      create    app/models/location.rb
+      create    test/unit/location_test.rb
+      create    test/fixtures/locations.yml
+      exists    db/migrate
+      create    db/migrate/20100428003419_create_locations.rb
+]0;oss@bavc-desktop2: ~/boboss@bavc-desktop2:~/bob$ ls
+[00m[01;34mapp[00m     [01;34mdb[00m   [00mgenerate[00m  [01;34mlog[00m     [00mRakefile[00m  [01;34mscript[00m  [01;34mtmp[00m
+[01;34mconfig[00m  [01;34mdoc[00m  [01;34mlib[00m       [01;34mpublic[00m  [00mREADME[00m    [01;34mtest[00m    [01;34mvendor[00m
+[m]0;oss@bavc-desktop2: ~/boboss@bavc-desktop2:~/bob$ cd .[Kapp
+]0;oss@bavc-desktop2: ~/bob/apposs@bavc-desktop2:~/bob/app$ ls
+[00m[01;34mcontrollers[00m  [01;34mhelpers[00m  [01;34mmodels[00m  [01;34mviews[00m
+[m]0;oss@bavc-desktop2: ~/bob/apposs@bavc-desktop2:~/bob/app$ cd [K controllers/
+]0;oss@bavc-desktop2: ~/bob/app/controllersoss@bavc-desktop2:~/bob/app/controllers$ ;s
+bash: syntax error near unexpected token `;'
+]0;oss@bavc-desktop2: ~/bob/app/controllersoss@bavc-desktop2:~/bob/app/controllers$ ls
+[00m[00mapplication_controller.rb[00m  [00mreviews_controller.rb[00m
+[00mlocations_controller.rb[00m    [00mreviews_controller.rb~[00m
+[m]0;oss@bavc-desktop2: ~/bob/app/controllersoss@bavc-desktop2:~/bob/app/controllers$ script/genera[K[K[Kerate migras[K[K[K[Kgration L[Kloc[K[K[Klocation to [K[K[K[Kto [K[K[K[Knidtor ef[Kview 
+bash: script/generate: No such file or directory
+]0;oss@bavc-desktop2: ~/bob/app/controllersoss@bavc-desktop2:~/bob/app/controllers$ script/generate migration locationidtoreeview [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ..
+]0;oss@bavc-desktop2: ~/bob/apposs@bavc-desktop2:~/bob/app$ cd ..
+]0;oss@bavc-desktop2: ~/boboss@bavc-desktop2:~/bob$ cd ..script/generate migration locationidtoreview 
+      exists  db/migrate
+      create  db/migrate/20100428014322_locationidtoreview.rb
+]0;oss@bavc-desktop2: ~/boboss@bavc-desktop2:~/bob$ rake[K[K[Kake de[Kb:migrate
+(in /home/oss/bob)
+==  CreateLocations: migrating ================================================
+-- create_table(:locations)
+   -> 0.0029s
+==  CreateLocations: migrated (0.0033s) =======================================
+
+==  Locationidtoreview: migrating =============================================
+-- add_column(:reviews, :locationId, :integer)
+   -> 0.0015s
+==  Locationidtoreview: migrated (0.0019s) ====================================
+
+]0;oss@bavc-desktop2: ~/boboss@bavc-desktop2:~/bob$ rake db[K[Krouts[Kes
+(in /home/oss/bob)
+    locations GET    /locations(.:format)               {:action=>"index", :controller=>"locations"}
+              POST   /locations(.:format)               {:action=>"create", :controller=>"locations"}
+ new_location GET    /locations/new(.:format)           {:action=>"new", :controller=>"locations"}
+edit_location GET    /locations/:id/edit(.:format)      {:action=>"edit", :controller=>"locations"}
+     location GET    /locations/:id(.:format)           {:action=>"show", :controller=>"locations"}
+              PUT    /locations/:id(.:format)           {:action=>"update", :controller=>"locations"}
+              DELETE /locations/:id(.:format)           {:action=>"destroy", :controller=>"locations"}
+      reviews GET    /reviews(.:format)                 {:action=>"index", :controller=>"reviews"}
+              POST   /reviews(.:format)                 {:action=>"create", :controller=>"reviews"}
+   new_review GET    /reviews/new(.:format)             {:action=>"new", :controller=>"reviews"}
+  edit_review GET    /reviews/:id/edit(.:format)        {:action=>"edit", :controller=>"reviews"}
+       review GET    /reviews/:id(.:format)             {:action=>"show", :controller=>"reviews"}
+              PUT    /reviews/:id(.:format)             {:action=>"update", :controller=>"reviews"}
+              DELETE /reviews/:id(.:format)             {:action=>"destroy", :controller=>"reviews"}
+         root GET    /                                  {:action=>"index", :controller=>"reviews"}
+                     /:controller/:action/:id           
+                     /:controller/:action/:id(.:format) 
+]0;oss@bavc-desktop2: ~/boboss@bavc-desktop2:~/bob$ scripty[K/conc[Kc[K[Knsole 
+Loading development environment (Rails 2.3.5)
+>> review[K[K[K[K[Keve[Kiew = Reviews.last
+NameError: uninitialized constant Reviews
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:443:in `load_missing_constant'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:92:in `const_missing'
+	from (irb):1
+>> review = Reviews.last[1P.last
+=> #<Review id: 2, author: "Austen Tong", body: "so Happy\r\ndasdfasf\r\ndsafsadfsafsaf fsdafasf\r\nasdfsa...", title: "Ya", rating: 5, created_at: "2010-04-16 02:26:14", updated_at: "2010-04-28 00:22:16", happy: false, locationId: nil>
+>> location[K[K[K[K[K[K[K[Kreview = Review.last[K[K[K[K[K[K[K[K[K[K[K[K[K[K.location = loaction.first
+NameError: undefined local variable or method `loaction' for #<Object:0xb7d91950>
+	from (irb):3
+>> review.location = loaction.first[1Poaction.firstLoaction.first
+NameError: uninitialized constant Loaction
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:443:in `load_missing_constant'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:92:in `const_missing'
+	from (irb):4
+>> location = loca[K[K[K[KLocation.first
+=> #<Location id: 1, Name: "The Puzzle place", Address: "2258 hoover ave mars", created_at: "2010-04-28 01:49:33", updated_at: "2010-04-28 01:49:33">
+>> location = Location.first[C[C[Creview.location = Loaction.first[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[Klocation
+=> #<Location id: 1, Name: "The Puzzle place", Address: "2258 hoover ave mars", created_at: "2010-04-28 01:49:33", updated_at: "2010-04-28 01:49:33">
+>> revie[K[Kiew
+=> #<Review id: 2, author: "Austen Tong", body: "so Happy\r\ndasdfasf\r\ndsafsadfsafsaf fsdafasf\r\nasdfsa...", title: "Ya", rating: 5, created_at: "2010-04-16 02:26:14", updated_at: "2010-04-28 00:22:16", happy: false, locationId: nil>
+>> review.location = location.id
+ActiveRecord::AssociationTypeMismatch: Location(#-607245988) expected, got Fixnum(#-605262538)
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/associations/association_proxy.rb:262:in `raise_on_type_mismatch'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/associations/belongs_to_association.rb:22:in `replace'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/associations.rb:1281:in `location='
+	from (irb):8
+>> review.location = location.id[K[K[K
+=> #<Location id: 1, Name: "The Puzzle place", Address: "2258 hoover ave mars", created_at: "2010-04-28 01:49:33", updated_at: "2010-04-28 01:49:33">
+>> review.location = location[K[K[K[K[K[K[K[K[K[K
+=> #<Location id: 1, Name: "The Puzzle place", Address: "2258 hoover ave mars", created_at: "2010-04-28 01:49:33", updated_at: "2010-04-28 01:49:33">
+>> review.save!
+=> true
+>> review.save!location 
+=> #<Location id: 1, Name: "The Puzzle place", Address: "2258 hoover ave mars", created_at: "2010-04-28 01:49:33", updated_at: "2010-04-28 01:49:33">
+>> review.location [4Psave!location = location.id[C[C[C[C[C[C[C[C[C[K.location = location[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+=> #<Review id: 2, author: "Austen Tong", body: "so Happy\r\ndasdfasf\r\ndsafsadfsafsaf fsdafasf\r\nasdfsa...", title: "Ya", rating: 5, created_at: "2010-04-16 02:26:14", updated_at: "2010-04-28 02:19:46", happy: false, locationId: nil>
+>> review.location [4Psave!location = location.id
+ActiveRecord::AssociationTypeMismatch: Location(#-607245988) expected, got Fixnum(#-605262538)
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/associations/association_proxy.rb:262:in `raise_on_type_mismatch'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/associations/belongs_to_association.rb:22:in `replace'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/associations.rb:1281:in `location='
+	from (irb):14
+>> review.location = location.id[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kid
+=> 2
+>> review.idlocation = location.id[C[1Plocation.id[1Plocation.id[1Plocation.id[1Plocation.id[1Plocation.id[1Plocation.id[1Plocation.id[1Plocation.id[1Plocation.id[1Plocation.id[1Pocation.id[1Plocation.id[C[C[C[C[C[C[C[C[C[1Plocation.id[C[C[C[C[C[C[C[C[1Plocation.id[C[C[C[C[C[C[C[1Plocation.id[C[C[C[C[C[C[1Plocation.id[C[C[C[C[C[1Plocation.id[C[C[C[C[1Plocation.id[C[C[C
+=> 1
+>> location.id[C[C[C[2Preview.idlocation = location.id[1@.[1@n[1@a[1@m[1@e[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K
+NoMethodError: undefined method `name=' for #<ActiveRecord::Associations::BelongsToAssociation:0xb793508c>
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/associations/association_proxy.rb:220:in `method_missing'
+	from (irb):17
+>> review.location.name = location[1P[1P[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K1
+ActiveRecord::AssociationTypeMismatch: Location(#-607245988) expected, got Fixnum(#-605262538)
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/associations/association_proxy.rb:262:in `raise_on_type_mismatch'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/associations/belongs_to_association.rb:22:in `replace'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/associations.rb:1281:in `location='
+	from (irb):18
+>> review.location = 1[KLocation.first
+=> #<Location id: 1, Name: "The Puzzle place", Address: "2258 hoover ave mars", created_at: "2010-04-28 01:49:33", updated_at: "2010-04-28 01:49:33">
+>> review.location = Location.first1[K.name = location[C[C[C[20Plocation.id[C[C[C[2Preview.idlocation = location.id[C[C[C[C[C[C[C[C[C[K.location [4Psave!location = location.id[C[C[C[C[C[C[C[C[C[K.location = location[C[C[C[1Plocation = Location.first[C[C[Creview.location = location[C[C[C[C[C[C[C[C[C[K.location = location.id[K[K[4Psave!location [K.location = location.id[C[C[C[C[C[C[C[C[C[K
+=> #<Review id: 2, author: "Austen Tong", body: "so Happy\r\ndasdfasf\r\ndsafsadfsafsaf fsdafasf\r\nasdfsa...", title: "Ya", rating: 5, created_at: "2010-04-16 02:26:14", updated_at: "2010-04-28 02:19:46", happy: false, locationId: nil>
+>> rev[K[K[Kreview[C[C[C[Kreview[C[C[C[Kreview.location = Location.first
+=> #<Location id: 1, Name: "The Puzzle place", Address: "2258 hoover ave mars", created_at: "2010-04-28 01:49:33", updated_at: "2010-04-28 01:49:33">
+>> review.location = Location.first[C[C[C[Kreview = Review.first
+=> #<Review id: 1, author: "austen tong", body: "the good place dsafsaf\r\ndsafdsafdsafsdaf fsdadfsdaf...", title: "the review", rating: 2, created_at: "2010-04-16 00:59:11", updated_at: "2010-04-28 00:19:46", happy: true, locationId: nil>
+>> review = Review.first[C[C[C[C[C[C[C[C[C.location = Location.first
+=> #<Location id: 1, Name: "The Puzzle place", Address: "2258 hoover ave mars", created_at: "2010-04-28 01:49:33", updated_at: "2010-04-28 01:49:33">
+>> review.location = Location.first[C[C[C[C[C[C[C[C[C[11P = Review.first[C[C[C[C[C[C[C[C[C.location = Location.first[C[C[C[Kreview.location = Location.first[C[C[C[Kreview.location = Location.first[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+=> #<Review id: 1, author: "austen tong", body: "the good place dsafsaf\r\ndsafdsafdsafsdaf fsdadfsdaf...", title: "the review", rating: 2, created_at: "2010-04-16 00:59:11", updated_at: "2010-04-28 00:19:46", happy: true, locationId: nil>
+>> review.location = Location.first[C[C[C[C[C[C[C[C[C[11P = Review.first[C[C[C[C[C[C[C[C[C.location = Location.first[C[C[C[C[C[C[C[C[C[K[C[C[C[Kreview.save
+=> true
+>> review.save[C[C[C[Kreview.save[K.location = Location.first[C[C[C[C[C[C[C[C[C[11P = Review.first[C[C[C[C[C[C[C[C[C.location = Location.first[C[C[C[C[C[C[C[C[C[K.location = Location.first
+=> #<Location id: 1, Name: "The Puzzle place", Address: "2258 hoover ave mars", created_at: "2010-04-28 01:49:33", updated_at: "2010-04-28 01:49:33">
+>> review.location = Location.first[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+=> #<Location id: 1, Name: "The Puzzle place", Address: "2258 hoover ave mars", created_at: "2010-04-28 01:49:33", updated_at: "2010-04-28 01:49:33">
+>> review.location = Location.first[K.m=name[K[K[K[K[K[Kname
+NoMethodError: undefined method `name' for #<ActiveRecord::Associations::BelongsToAssociation:0xb7612800>
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/associations/association_proxy.rb:220:in `method_missing'
+	from (irb):28
+>> review.location.name[K[K[K[K[K
+=> #<Location id: 1, Name: "The Puzzle place", Address: "2258 hoover ave mars", created_at: "2010-04-28 01:49:33", updated_at: "2010-04-28 01:49:33">
+>> review.location.name[K = Location.first[K.name[K.name[K = Location.first[C[C[C[C[C[C[C[C[C[Csave[K[K
+=> #<Review id: 1, author: "austen tong", body: "the good place dsafsaf\r\ndsafdsafdsafsdaf fsdadfsdaf...", title: "the review", rating: 2, created_at: "2010-04-16 00:59:11", updated_at: "2010-04-28 02:26:52", happy: true, locationId: nil>
+>> review.location[K.location.name[K = Location.first
+=> #<Location id: 1, Name: "The Puzzle place", Address: "2258 hoover ave mars", created_at: "2010-04-28 01:49:33", updated_at: "2010-04-28 01:49:33">
+>> review.location = Location.first[C[C[C[C[C[C[C[C[C[K
+=> #<Review id: 1, author: "austen tong", body: "the good place dsafsaf\r\ndsafdsafdsafsdaf fsdadfsdaf...", title: "the review", rating: 2, created_at: "2010-04-16 00:59:11", updated_at: "2010-04-28 02:26:52", happy: true, locationId: nil>
+>> review.location = Location.first[C[C[C[C[C[C[C[C[C[K = r[KReview.f[Klast
+=> #<Review id: 2, author: "Austen Tong", body: "so Happy\r\ndasdfasf\r\ndsafsadfsafsaf fsdafasf\r\nasdfsa...", title: "Ya", rating: 5, created_at: "2010-04-16 02:26:14", updated_at: "2010-04-28 02:19:46", happy: false>
+>> review = Review.last[K[K[K[K[K[K[K[K[K[K[K[K[K[K.location = [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kloca[K[K[Kocation = location.last
+NoMethodError: undefined method `last' for #<Location:0xb794b648>
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/attribute_methods.rb:260:in `method_missing'
+	from (irb):34
+>> location = location.last[C[1Pocation.lastLocation.last
+=> #<Location id: 2, Name: "bavc", Address: "some where over the rainbow", created_at: "2010-04-28 01:50:13", updated_at: "2010-04-28 01:50:13">
+>> location = Location.lastlocation.last[C[C[C[4Preview = Review.last[K[K[K[K[K[K[K[K[K[K[K[1@.[1@l[1@o[1@c[1@a[1@t[1@i[1@o[1@n[C[C[C l o c a t i o n 
+=> #<Location id: 2, Name: "bavc", Address: "some where over the rainbow", created_at: "2010-04-28 01:50:13", updated_at: "2010-04-28 01:50:13">
+>> review.location = location [C[C[C[3Plocation = Location.lastlocation.last[C[C[C[4Preview = Review.last[C[C[Clocation = location.lastLocation.last[C[C[Creview.location = location [C[C[C[Kreview.location = location [C[C[C[Kreview
+=> #<Review id: 2, author: "Austen Tong", body: "so Happy\r\ndasdfasf\r\ndsafsadfsafsaf fsdafasf\r\nasdfsa...", title: "Ya", rating: 5, created_at: "2010-04-16 02:26:14", updated_at: "2010-04-28 02:19:46", happy: false>
+>> review.save!
+=> true
+>> review.save!\[K[K[K[K[K[K[K
+=> #<Review id: 2, author: "Austen Tong", body: "so Happy\r\ndasdfasf\r\ndsafsadfsafsaf fsdafasf\r\nasdfsa...", title: "Ya", rating: 5, created_at: "2010-04-16 02:26:14", updated_at: "2010-04-28 02:33:44", happy: false>
+>> review.location
+=> #<Location id: 2, Name: "bavc", Address: "some where over the rainbow", created_at: "2010-04-28 01:50:13", updated_at: "2010-04-28 01:50:13">
+>> review.location[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KReview.first
+=> #<Review id: 1, author: "austen tong", body: "the good place dsafsaf\r\ndsafdsafdsafsdaf fsdadfsdaf...", title: "the review", rating: 2, created_at: "2010-04-16 00:59:11", updated_at: "2010-04-28 02:26:52", happy: true>
+>> Review.first[K[K[K[K[K[K.last
+=> #<Review id: 2, author: "Austen Tong", body: "so Happy\r\ndasdfasf\r\ndsafsadfsafsaf fsdafasf\r\nasdfsa...", title: "Ya", rating: 5, created_at: "2010-04-16 02:26:14", updated_at: "2010-04-28 02:33:44", happy: false>
+>> Review.last
+=> #<Review id: 2, author: "Austen Tong", body: "so Happy\r\ndasdfasf\r\ndsafsadfsafsaf fsdafasf\r\nasdfsa...", title: "Ya", rating: 5, created_at: "2010-04-16 02:26:14", updated_at: "2010-04-28 02:33:44", happy: false>
+>> review.location[C[C[C[4PReview.last.location
+=> nil
+>> Review.last.location[1P.location[1P.location[1P.location[1P.locationf.locationi.locationr.locations.locationt.location
+=> nil
+>> Review.first.location[K[K[K[K[K[K[K[K[K[K[K[K[K[Kfirst.o[Klocation = loca[K[K[K[K[K[K[C[C[C[C[C[C[C[1P [1P [1P [1P [1P [1P [1P [1P [1P [C [1@ [1@=[1@ [1@r[1@e[1@v[1@i[1@e[1@w
+=> #<Review id: 1, author: "austen tong", body: "the good place dsafsaf\r\ndsafdsafdsafsdaf fsdadfsdaf...", title: "the review", rating: 2, created_at: "2010-04-16 00:59:11", updated_at: "2010-04-28 02:26:52", happy: true>
+>> review = Review.first  [1P[1P[1P[1P[1P[1P[1@l[1@o[1@c[1@a[1@t[1@i[1@o[1@n[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1@l[1@o[1@c[1@a[1@t[1@i[1@o[1@n[C[C[C[C[C[C[1P[1P[1P[1P[1P[1@l[1@s[1P[1@a[1@t[1P[1P[C[1P[1@L[C[C[C[C[C[C[C[C[C[C[1@a[1@s[1@t
+=> #<Location id: 2, Name: "bavc", Address: "some where over the rainbow", created_at: "2010-04-28 01:50:13", updated_at: "2010-04-28 01:50:13">
+>> location = Location.last  [C[C[C[3Preview = Review.fir[C[C[C[C[C[1@.[1@o[1@l[1P[1P[1@l[1@o[1@c[1@a[1@t[1@i[1@o[1@n[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@l[1@o[1@c[1@a[1@t[1@i[1@o[1@n
+=> #<Location id: 2, Name: "bavc", Address: "some where over the rainbow", created_at: "2010-04-28 01:50:13", updated_at: "2010-04-28 01:50:13">
+>> review.location = location  [K[K[K[K[K[K[K[K[K[K[K[K
+=> #<Location id: 2, Name: "bavc", Address: "some where over the rainbow", created_at: "2010-04-28 01:50:13", updated_at: "2010-04-28 01:50:13">
+>> review.location = location  
+=> #<Location id: 2, Name: "bavc", Address: "some where over the rainbow", created_at: "2010-04-28 01:50:13", updated_at: "2010-04-28 01:50:13">
+>> revew[K[Kiew.save!
+=> true
+>> review.save!location = location  [K= location  [C[C[C[2Plocation = Location.last[C[C[C[C[C[2@review.location = location[C[C[C[C[C[2Plocation = Location.last[C[C[C[C[C[2@review.location = location[C[C[C[C[C[2Plocation = Location.last[C[C[C[C[C[2@review.location = location[C[C[K= location  [C[C[C[C[C[C[C[C[C[Csave![K[C[C[C[Kreview
+=> #<Review id: 1, author: "austen tong", body: "the good place dsafsaf\r\ndsafdsafdsafsdaf fsdadfsdaf...", title: "the review", rating: 2, created_at: "2010-04-16 00:59:11", updated_at: "2010-04-28 02:38:03", happy: true>
+>> review.location
+=> #<Location id: 2, Name: "bavc", Address: "some where over the rainbow", created_at: "2010-04-28 01:50:13", updated_at: "2010-04-28 01:50:13">
+>> review.save
+=> true
+>> review
+=> #<Review id: 1, author: "austen tong", body: "the good place dsafsaf\r\ndsafdsafdsafsdaf fsdadfsdaf...", title: "the review", rating: 2, created_at: "2010-04-16 00:59:11", updated_at: "2010-04-28 02:38:03", happy: true>
+>> review [K[K[K[K[K[K[KRevbi[K[Kiew.all
+=> [#<Review id: 1, author: "austen tong", body: "the good place dsafsaf\r\ndsafdsafdsafsdaf fsdadfsdaf...", title: "the review", rating: 2, created_at: "2010-04-16 00:59:11", updated_at: "2010-04-28 02:38:03", happy: true>, #<Review id: 2, author: "Austen Tong", body: "so Happy\r\ndasdfasf\r\ndsafsadfsafsaf fsdafasf\r\nasdfsa...", title: "Ya", rating: 5, created_at: "2010-04-16 02:26:14", updated_at: "2010-04-28 02:33:44", happy: false>]
+>>  Review.all[K[K[K[K.last.r[Klocation
+=> nil
+>> Review.last.location[C[1P.location[1P.location[1P.location[1P.locationr.locatione.locationv.locationi.locatione.locationw.location[1P.location[1P.location[1P.location[1P.location[1P.location[1P.locationf.locationi.locationr.locations.locationt.location
+=> nil
+>> a = Review.first.location[C[C[C[C[C[C[C[C[C[C[1Plast.location[C[C[C[C[C[C[C[C[C[Call[K[C[C[C[4Preview.savelocation[K.save!location = location  [K= location  [C[C[C[2Plocation = Location.last[C[C[C[C[C[3Preview = Review.fir[C[C[C[C[C[C[C[2PReview.first.location[C[C[Creview = Review.first  
+=> #<Review id: 1, author: "austen tong", body: "the good place dsafsaf\r\ndsafdsafdsafsdaf fsdadfsdaf...", title: "the review", rating: 2, created_at: "2010-04-16 00:59:11", updated_at: "2010-04-28 02:38:03", happy: true>
+>> A = [K[K[K[Ka = r[KReview.first\[K
+=> #<Review id: 1, author: "austen tong", body: "the good place dsafsaf\r\ndsafdsafdsafsdaf fsdadfsdaf...", title: "the review", rating: 2, created_at: "2010-04-16 00:59:11", updated_at: "2010-04-28 02:38:03", happy: true>
+>> a [K.o[K.l[K[Klocation = Location.last
+=> #<Location id: 2, Name: "bavc", Address: "some where over the rainbow", created_at: "2010-04-28 01:50:13", updated_at: "2010-04-28 01:50:13">
+>> a [K.save
+=> true
+>> Loc[Koc[K[Kcation.firs[K[K[K[K[K[K[K[K[K[K[K[K[KRevioe[K[Kew/[K.first.location
+=> nil
+>> reload!
+Reloading...
+=> true
+>> reload![C[C[CReview.first.location[C[C[Ca.save[Klocation = Location.last[C[C[C[C[10P = Review.first
+=> #<Review id: 1, author: "austen tong", body: "the good place dsafsaf\r\ndsafdsafdsafsdaf fsdadfsdaf...", title: "the review", rating: 2, created_at: "2010-04-16 00:59:11", updated_at: "2010-04-28 02:39:59", happy: true, location_id: nil>
+>> a = Review.first[C[C[C[9Preload![C[C[CReview.first.location[C[C[Ca.save[Klocation = Location.last
+=> #<Location id: 2, Name: "bavc", Address: "some where over the rainbow", created_at: "2010-04-28 01:50:13", updated_at: "2010-04-28 01:50:13">
+>> a.location = Location.last[C[C[C[C[10P = Review.first[C[C[C[9Preload![C[C[Ca = Review.first[C[C[C[9Preload![C[C[Ca = Review.first[C[C[C[9Preload![C[C[CReview.first.location[C[C[Ca.save[K
+=> true
+>> a.savelocation = Location.last[C[C[C[C[10P = Review.first[C[C[C[9Preload![C[C[CReview.first.location
+=> #<Location id: 2, Name: "bavc", Address: "some where over the rainbow"
